@@ -7,7 +7,7 @@
 # The default value is base.
 # Support values: base, base_cm, base_mt6592 and other devices in the future.
 #-----------------------------------------------------------------------------
-#BASE := base_cm
+#BASE := base
 
 ##############################################################################
 # The value is used for resource adapter with the aapt tool.
@@ -131,8 +131,6 @@ board_remove_apps := NfcNci
 #-----------------------------------------------------------------------------
 board_modify_apps := TeleService \
                      SystemUI \
-                     FlymeLauncher \
-                     Setting
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the board framework jar.

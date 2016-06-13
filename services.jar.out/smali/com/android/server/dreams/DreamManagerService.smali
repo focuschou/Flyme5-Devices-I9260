@@ -1182,7 +1182,7 @@
 
     move-result-object v3
 
-    const v4, 0x1040104
+    const v4, #android:string@config_dozeComponent#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1201,6 +1201,8 @@
     invoke-static {v3, v4, v0, p1}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v3
+
+    const/4 v3, 0x0
 
     if-eqz v3, :cond_3
 

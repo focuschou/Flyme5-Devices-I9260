@@ -435,6 +435,8 @@
     move-result-object v0
 
     const-string v3, "captive_portal_detection_enabled"
+    
+    const/4 v1, 0x0
 
     invoke-static {v0, v3, v1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
